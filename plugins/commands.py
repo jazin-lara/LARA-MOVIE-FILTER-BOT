@@ -53,7 +53,7 @@ async def start(client, message):
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/TBM_Bot_Updates'),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/CINEMA_COMPANYE_Backup')
+                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/+88N9oM5WQfI2NmJl')
             ]]
         else:
             buttons = [[
@@ -62,7 +62,7 @@ async def start(client, message):
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/TBM_Bot_Updates'),
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/Friday_Filim_House'),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/CINEMA_COMPANYE_Backup')
             ]]
         if CLONE_MODE == True:
