@@ -246,7 +246,7 @@ Loki S01 or Loki S01E04 or Lucifer S03E24</pre>
 
     CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
 
- 
+ {filesize}
 ➲ <a href=
 https://t.me/+88N9oM5WQfI2NmJl> FRIDAY MOVIE REQUEST GROUP </a>
 ➲ <a href=https://t.me/Friday_Filim_House
@@ -262,7 +262,7 @@ IMDb Data:
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
 ☀️ Languages : <code>{languages}</code>
-📀 RunTime: {runtime} Minutes
+🔍 RunTime: {runtime} Minutes
 📆 Release Info : {release_date}
 🎛 Countries : <code>{countries}</code>
 
