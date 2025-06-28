@@ -17,6 +17,31 @@ from shortzy import Shortzy
 from utils import get_size, temp, get_seconds, get_clone_shortlink
 logger = logging.getLogger(__name__)
 
+from urllib.parse import unquote  # മലയാളം URL ഡീകോഡ് ചെയ്യാൻ
+
+async def start(client, message):
+    # സ്റ്റെപ്പ് 1: ഡീപ് ലിങ്ക് പാരാമീറ്റർ പരിശോധിക്കുക
+    if len(message.text.split()) > 1:
+        full_cmd = message.text
+        # സ്റ്റെപ്പ് 2: "search_" ഉള്ളത് എടുക്കുക
+        if "search_" in full_cmd:
+            # സ്റ്റെപ്പ് 3: മൂവി പേര് വേർതിരിച്ചെടുക്കുക (പടക്കം)
+            query = unquote(full_cmd.split("search_")[1].strip())
+            
+            # സ്റ്റെപ്പ് 4: ഡീബഗ്ഗിംഗിനായി പ്രിന്റ് ചെയ്യുക
+            print(f"Received search query: {query}")
+            
+            # സ്റ്റെപ്പ് 5: സെർച്ച് ഫംഗ്ഷനിലേക്ക് കോൾ ചെയ്യുക
+            await handle_movie_search(client, message, query)
+            return
+    
+    # സ്റ്റെപ്പ് 6: ഡിഫോൾട്ട് മെസ്സേജ്
+    await message.reply(
+        "🎬 **ഉപയോഗിക്കേണ്ട വിധം:**\n"
+        "/start search_<മൂവി_പേര്>\n\n"
+        "ഉദാ: `/start search_പടക്കം`"
+    )
+
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     me = await client.get_me()
