@@ -32,7 +32,11 @@ async def start(client, message):
             print(f"Received search query: {query}")
             
             # സ്റ്റെപ്പ് 5: സെർച്ച് ഫംഗ്ഷനിലേക്ക് കോൾ ചെയ്യുക
-            await handle_movie_search(client, message, query)
+ async def handle_movie_search(client, message, query):
+    await message.reply(f"🔍 മൂവി സെർച്ച് ചെയ്യുന്നു: {query}...")
+    # ഇവിടെ നിങ്ങളുടെ ഡാറ്റാബേസ്/API കോൾ ചേർക്കുക       
+ 
+await handle_movie_search(client, message, query)
             return
     
     # സ്റ്റെപ്പ് 6: ഡിഫോൾട്ട് മെസ്സേജ്
