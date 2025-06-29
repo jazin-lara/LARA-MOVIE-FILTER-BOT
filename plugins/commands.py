@@ -249,9 +249,6 @@ async def start(client, message):
                     f_caption=f_caption
             if f_caption is None:
                 f_caption = f"{title}"
-reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://youtube.com/@LazyDeveloperr')] ] ),
-        protect_content=True if pre == 'filep' else False,
-        )
             try:
                 if STREAM_MODE == True:
                     log_msg = await client.send_cached_media(chat_id=LOG_CHANNEL, file_id=msg.get("file_id"))
