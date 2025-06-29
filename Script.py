@@ -247,7 +247,7 @@ Loki S01 or Loki S01E04 or Lucifer S03E24</pre>
     CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
 
 ⏱ ᴅᴜʀᴀᴛɪᴏɴ : {duration}
-💾 sɪᴢᴇ : {file_size}
+💾 sɪᴢᴇ : {size}
 
 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 ➲ <a href=
 https://t.me/+88N9oM5WQfI2NmJl> @FRIDAY MOVIE REQUEST GROUP </a>
