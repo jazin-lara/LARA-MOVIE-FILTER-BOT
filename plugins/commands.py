@@ -68,7 +68,7 @@ async def start(client, message):
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAE2-4RoYP4QeqxADEoSarl3ma_z4JEW1QACixUAAoVUCVecJTVQJWtW2jYE") 
+        m=await message.reply_sticker("CAACAgUAAxkBAhQeDmhg0e66zoFQw0qawTUzd9sTR_QtAAIrFQACHq0JVzJAY4NCC2JSNgQ") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
