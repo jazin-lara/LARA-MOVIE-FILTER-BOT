@@ -54,6 +54,8 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('📡 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+16DkJnIZMsIzZDk1'),
                 InlineKeyboardButton('🍿 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/+88N9oM5WQfI2NmJl')
+
+InlineKeyboardButton('🍿 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/+88N9oM5WQfI2NmJl')
             ]]
         else:
             buttons = [[
