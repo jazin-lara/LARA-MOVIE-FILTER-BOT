@@ -54,14 +54,11 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('📡 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+16DkJnIZMsIzZDk1'),
                 InlineKeyboardButton('🍿 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/+88N9oM5WQfI2NmJl')
-
-InlineKeyboardButton('🍿 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/+88N9oM5WQfI2NmJl')
             ]]
         else:
             buttons = [[
                 InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
+            ],[
                 InlineKeyboardButton('⚙ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('📡 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+16DkJnIZMsIzZDk1'),
