@@ -57,7 +57,8 @@ async def start(client, message):
         else:
             buttons = [[
                 InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
+            ],[
+
                 InlineKeyboardButton('⚙ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('📡 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+16DkJnIZMsIzZDk1'),
@@ -279,6 +280,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
+                    reply_markup=InlineKeyboardButton([[InlineKeyboardButton('⚠️ʜᴇʟᴘ', callback_data='help')]])
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(button)
                 )
