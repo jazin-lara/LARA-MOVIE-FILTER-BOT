@@ -2558,7 +2558,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, name, msg, reply_msg, ai_search)
                 else:
-                    return await reply_msg.edit_text(f"**Movie not Found Dude 😔 Do search in google and copy that name and send if that movies OTT released**")
+                    return await reply_msg.edit_text(f"**Movie not Found Dude 😔               Do search in google and copy that name and send if that movies OTT released**")
         else:
             return
     else:
