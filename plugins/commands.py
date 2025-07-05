@@ -257,7 +257,7 @@ async def start(client, message):
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
-                    caption=f_caption,             protect_content=msg.get('protect', False),
+                    caption=f_caption,             protect_content=msg.get('protect', True),
                     reply_markup=InlineKeyboardMarkup(button)
                 )
                 filesarr.append(msg)
