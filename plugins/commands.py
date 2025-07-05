@@ -51,9 +51,8 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('⚙ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('📡 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+16DkJnIZMsIzZDk1'),
-                InlineKeyboardButton('🍿 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/+88N9oM5WQfI2NmJl')
-            ]]
+                InlineKeyboardButton('𝗢𝘂𝗿 𝗠𝗼𝘃𝗶𝗲 / 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗟𝗶𝗻𝗸𝘀', url=f'https://t.me/TBM_Bot_Updates')
+                ]]
         else:
             buttons = [[
                 InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
