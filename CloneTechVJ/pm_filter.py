@@ -31,7 +31,7 @@ SPELL_CHECK = {}
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     ai_search = True
-    reply_msg = await message.reply_text(f"<b><i>Searching For {message.text} 🔍</i></b>")
+    reply_msg = await message.reply_text(f"<b><i>Searching For</i></b>")
     await auto_filter(client, message.text, message, reply_msg, ai_search)
             
 @Client.on_message(filters.private & filters.text & filters.incoming)
